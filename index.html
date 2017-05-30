@@ -10,7 +10,50 @@
   <title>Labcar</title>
 </head>
 <body>
-  <header></header>
+
+  <header>
+    <nav class="container-fluid">
+      <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="panel-heading flex" role="tab" id="headingOne">
+          <a class="collapsed navbar-left flex align-center" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+            <i class="glyphicon glyphicon-menu-hamburger"></i>
+          </a>
+          <div class="align-self col-xs-12 flex align-center justify-center">
+            <a class="" href="#"><img src="assets/img/logo.png" class="center-block" alt="Logo Header" width="100px"></a>
+          </div>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="list-group">
+            <div class="navbar">
+              <a href="#">Viaja</a>
+            </div>
+            <div class="navbar">
+              <a href="#">Conduce</a>
+            </div>
+            <div class="navbar">
+              <a href="#">Inicia Sesión</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container hidden-xs">
+        <div class="navbar-left">
+          <a href="#">
+            <img src="assets/img/logo.png" width="100px" alt="Logo Header">
+          </a>
+        </div>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Viaja</a></li>
+            <li><a href="#">Conduce</a></li>
+            <li><a href="#">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
   <section id="hero"></section>
   <section id="informacion"></section>
   <section id="conduce"></section>
