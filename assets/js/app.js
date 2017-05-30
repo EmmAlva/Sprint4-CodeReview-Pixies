@@ -46,15 +46,10 @@ function initMap() {
         }, function(response, status){
             if(status === 'OK'){
                 var distancia = Number((response.routes[0].legs[0].distance.text.replace("km","")).replace(",","."));
-                var total= distancia*1.75;
-                costo.innerHTML = total;
-
+                costo.innerHTML = "S/. " +  (distancia*1.75).toFixed(2);
+                console.log(distancia);
                 directionsDisplay.setDirections(response);
-                markadorLaboratoria.setMap(null);
-                if(miUbicacion!= null){
-                    miUbicacion.setMap(null);
-                }
-
+                marker.setMap(null);
             }
             else{
                 window.alert("No encontramos una ruta.");

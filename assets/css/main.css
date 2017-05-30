@@ -53,3 +53,9 @@ body {
 .float-right{
     float: right;
 }
+
+#costo{
+    color: black;
+    font-size: 32px;
+    margin-top: 12px;
+}
