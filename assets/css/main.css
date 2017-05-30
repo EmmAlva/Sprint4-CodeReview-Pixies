@@ -28,12 +28,15 @@ body {
 }
 /* XS Mobile ( 0-768px ) */
 /*SM Small devices (tablets, 768px and up) */
-@media (max-width: 767px),
-(min-width: 768px){
-  .textConduce .subTitle,
-  .textConduce .btn{
+@media (max-width: 992px){
+  .textConduce .subTitle{
     font-size: 2.55rem;
     color: white;
+  }
+  .textConduce .btn{
+    width: 90%;
+    color: white;
+    font-size: 1.9rem;
   }
   .textConduce{
     margin: 200px 10px;
@@ -61,7 +64,7 @@ body {
 }
 /* MD Medium devices (desktops, 992px and up) */
 /* LG Large devices (large desktops, 1200px and up) */
-@media (min-width: 992px),(min-width: 1200) {
+@media (min-width: 992px) {
   .textConduce .font-raleway{
     font-size: 2.7rem;
   }
@@ -83,7 +86,7 @@ body {
   }
   .containerMobile .col-md-10{
     border: 1px solid white;
-    font-size: 0.65em;
+    font-size: 1.7em;
     padding: 30px 20px;
   }
   .containerMobile .col-md-10 .font-raleway{
