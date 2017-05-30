@@ -1,0 +1,98 @@
+
+body {
+  color: #FFFFFF ;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.bg-goldenrod {
+  background-color: #fbb617 ;
+}
+/* */
+/*Section*/
+.containerConduce{
+  background-image: url(../img/conduce.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.textConduce .btn{
+  margin-top: 10px;
+}
+.textConduce{
+  overflow: hidden;
+}
+.bg-whiteBlack{
+  background-color: rgba(12,12,12,0.6);
+}
+/* XS Mobile ( 0-768px ) */
+/*SM Small devices (tablets, 768px and up) */
+@media (max-width: 767px),
+(min-width: 768px){
+  .textConduce .subTitle,
+  .textConduce .btn{
+    font-size: 2.55rem;
+    color: white;
+  }
+  .textConduce{
+    margin: 200px 10px;
+  }
+  .containerMobile{
+    padding: 50px 10px;
+    font-size: 3rem;
+  }
+  .containerMobile .imgMobile{
+    border: 1px solid white;
+    padding: 50px 10px;
+  }
+  .containerMobile .textMobileMb{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border:0px;
+  }
+  .containerMobile img{
+    width: 50%;
+  }
+  .containerMobile .col-xs-12 .padd-top{
+    padding-top: 43px;
+  }
+}
+/* MD Medium devices (desktops, 992px and up) */
+/* LG Large devices (large desktops, 1200px and up) */
+@media (min-width: 992px),(min-width: 1200) {
+  .textConduce .font-raleway{
+    font-size: 2.7rem;
+  }
+  .textConduce .subTitle,
+  .textConduce .btn{
+    font-size: 1.6rem;
+    color: white;
+  }
+  .textConduce{
+    margin-top: 100px;
+    margin-bottom: 220px;
+    margin-left: 25px;
+  }
+  .containerMobile{
+    padding: 40px 15px;
+  }
+  .containerMobile .imgMobile{
+    border: 0;
+  }
+  .containerMobile .col-md-10{
+    border: 1px solid white;
+    font-size: 0.65em;
+    padding: 30px 20px;
+  }
+  .containerMobile .col-md-10 .font-raleway{
+    font-size: 1.5em;
+  }
+  .containerMobile img{
+    width: 80%;
+  }
+
+}
+
+/**/
