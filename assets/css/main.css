@@ -8,11 +8,36 @@ section .btn {
   font-size: 16px;
   font-weight: bold;
 }
+.align-center{
+  align-items: center;
+}
 .bg-goldenrod {
   background-color: #fbb617 ;
 }
+.flex{
+  display: flex;
+}
 .font-raleway {
   font-family: 'Raleway', sans-serif;
+}
+.justify-center{
+	justify-content: center;
+}
+/** NAVBAR**/
+header a {
+	text-decoration: none;
+	color: none;
+	color: #5d5c5a;
+}
+header{
+	background-color: #fff;
+}
+nav .navbar-left img{
+	padding-top: 15px;
+}
+nav .visible-xs, nav .hidden-xs{
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 /** SECCIÓN TARIFA **/
 #tarifa{
@@ -47,7 +72,7 @@ section .btn {
   font-size: 32px;
   margin-top: 12px;
 }
-/**SECCIÓN HERO**/
+/** SECCIÓN HERO **/
 #hero {
   background-image: url(../img/taxi.jpg);
   background-repeat: no-repeat;
