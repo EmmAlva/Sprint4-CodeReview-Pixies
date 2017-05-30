@@ -1,61 +1,50 @@
 body {
-    color: #FFFFFF ;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+  color: #FFFFFF ;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
-
 .font-raleway {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
-
 .bg-goldenrod {
-    background-color: #fbb617 ;
+  background-color: #fbb617 ;
 }
-
 .btn{
-    font-weight: bold;
+  font-weight: bold;
 }
-
-/** seccion tarifa **/
-
+/** SECCIÓN TARIFA **/
 #tarifa{
-    color: white;
-    padding: 30px;
+  color: white;
+  padding: 30px;
 }
-
 .input-tarifa{
-    font-family: 'Open Sans';
-    background-color: transparent;
-    margin: 20px;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 3px;
-    width: 80%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-family: 'Open Sans';
+  margin: 20px;
+  padding: 10px;
+  width: 80%;
 }
-
 .input-tarifa::-webkit-input-placeholder {
-    color: white;
+  color: white;
 }
-
 #mapa {
-    width: 100%;
-    height:100%;
+  height:100%;
+  width: 100%;
 }
-
 .border-map{
-    height: 400px;
-    width: 400px;
-    padding: 10px;
-    border: 1px solid white;
-    float: right;
+  border: 1px solid white;
+  height: 400px;
+  float: right;
+  padding: 10px;
+  width: 400px;
 }
-
 .float-right{
-    float: right;
+  float: right;
 }
-
 #costo{
-    color: black;
-    font-size: 32px;
-    margin-top: 12px;
+  color: black;
+  font-size: 32px;
+  margin-top: 12px;
 }
