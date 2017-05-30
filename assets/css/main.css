@@ -1,0 +1,55 @@
+body {
+    color: #FFFFFF ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-goldenrod {
+    background-color: #fbb617 ;
+}
+
+.btn{
+    font-weight: bold;
+}
+
+/** seccion tarifa **/
+
+#tarifa{
+    color: white;
+    padding: 30px;
+}
+
+.input-tarifa{
+    font-family: 'Open Sans';
+    background-color: transparent;
+    margin: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 3px;
+    width: 80%;
+}
+
+.input-tarifa::-webkit-input-placeholder {
+    color: white;
+}
+
+#mapa {
+    width: 100%;
+    height:100%;
+}
+
+.border-map{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid white;
+    float: right;
+}
+
+.float-right{
+    float: right;
+}
