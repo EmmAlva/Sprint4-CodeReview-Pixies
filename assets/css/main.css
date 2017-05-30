@@ -17,10 +17,9 @@ body {
 }
 
 /** seccion tarifa **/
-
 #tarifa{
     color: white;
-    padding: 30px;
+    padding: 7% 0;
 }
 
 .input-tarifa{
@@ -50,12 +49,56 @@ body {
     float: right;
 }
 
-.float-right{
-    float: right;
-}
-
 #costo{
     color: black;
     font-size: 32px;
     margin-top: 12px;
+}
+
+/** footer **/
+footer{
+  background-color: #2B2B2B;
+  color: white;
+  padding: 7% 0;
+}
+
+footer > div > div img{
+  margin: 7% 0;
+	width: 80%;
+}
+
+footer a, footer li {
+	text-decoration: none !important;
+	color: none;
+	color: #fff;
+}
+
+.icons{
+  font-size: 1.5rem;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.flex{
+  display: flex;
+  align-items: flex-start;
+}
+
+.reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  footer > div > div img {
+  	width: 70%;
+  }
+
+  .flex{
+    align-items: flex-end;
+  }
+
+  .reverse{
+    flex-direction: column;
+  }
 }
