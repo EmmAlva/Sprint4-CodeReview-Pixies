@@ -3,14 +3,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
-.font-raleway {
-  font-family: 'Raleway', sans-serif;
+section .btn {
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 .bg-goldenrod {
   background-color: #fbb617 ;
 }
-.btn{
-  font-weight: bold;
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
 }
 /** SECCIÓN TARIFA **/
 #tarifa{
@@ -40,11 +42,78 @@ body {
   padding: 10px;
   width: 400px;
 }
-.float-right{
-  float: right;
-}
 #costo{
   color: black;
   font-size: 32px;
   margin-top: 12px;
+}
+/**SECCIÓN HERO**/
+#hero {
+  background-image: url(../img/taxi.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#hero .registro {
+  display: inline-block;
+  position: relative;
+  top: 25%;
+}
+#hero .logo-blanco {
+  height: 100%;
+}
+#hero .separador {
+  display: flex;
+  justify-content: center;
+}
+#hero .separador hr,
+#hero .separador span
+{
+  width: 30%;
+}
+/* XS Mobile ( 0-768px ) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  #hero {
+    background-size: 100% 100%;
+    background-position: center;
+    height: 500px;
+  }
+  #hero .registro {
+    left: 25%;
+    width: 75%;
+  }
+  #hero .registro {
+    padding: 5px 25px 25px 25px;
+  }
+  #hero .logo-blanco {
+    width: 75px;
+  }
+  #hero h3 {
+    margin-top: 0;
+  }
+}
+/*SM Small devices (tablets, 768px and up) */
+/* MD Medium devices (desktops, 992px and up) */
+@media (min-width: 768px), (min-width: 992px) {
+  #hero {
+    background-size: 100% auto;
+    background-position: center -1170px;
+    height: 650px;
+  }
+  #hero .registro {
+    left: 60%;
+    width: 40%;
+  }
+  #hero .registro {
+    padding: 20px 40px 40px 40px;
+  }
+  #hero .logo-blanco {
+    width: 100px;
+  }
+}
+/* LG Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200){
+
 }
