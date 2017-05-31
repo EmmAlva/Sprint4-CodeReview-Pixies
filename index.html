@@ -14,7 +14,35 @@
   <body>
     <header>
       <nav class="container-fluid">
-        <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="control-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="control-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-xs padding-top-15 padding-bottom-15" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel-heading flex" role="tab" id="headingOne">
             <a class="collapsed navbar-left flex align-center" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
               <i class="glyphicon glyphicon-menu-hamburger"></i>
@@ -28,19 +56,19 @@
               <div class="navbar">
                 <a href="#">Viaja</a>
               </div>
-              <div class="navbar">
+              <div class="navbar ">
                 <a href="#">Conduce</a>
               </div>
               <div class="navbar">
-                <a href="#">Inicia Sesión</a>
+                <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Inicia Sesión</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="container hidden-xs">
+        <div class="container hidden-xs padding-top-15 padding-bottom-15">
           <div class="navbar-left">
             <a href="#">
-              <img src="assets/img/logo.png" width="100px" alt="Logo Header">
+              <img class="padding-top-15" src="assets/img/logo.png" width="100px" alt="Logo Header">
             </a>
           </div>
           <div class="navbar-right">
@@ -115,25 +143,25 @@
       </div>
     </section>
     <section id="tarifa" class="bg-goldenrod">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
+                <div class="col-sm-6 col-xs-12">
                   <h2 class="font-raleway">Tarifas</h2>
                   <p>Consulta las tarifas LabCar aquí</p>
-                  <div>
+                  <div class="col-xs-12 col-md-11">
                       <span class="glyphicon glyphicon-record"></span>
                       <input class="input-tarifa" type="text" placeholder="Ingrese su punto de partida" id="origen" required>
                   </div>
-                  <div>
+                  <div class="col-xs-12 col-md-11">
                       <span class="glyphicon glyphicon-send"></span>
                       <input class="input-tarifa" type="text" placeholder="Ingrese su punto de destino" id="destino" required>
                   </div>
-                  <div class="text-center">
+                  <div class="col-sm-8 text-center">
                       <button class="btn btn-default font-raleway" id="ruta">¡TRAZAR RUTA!</button>
                   </div>
                   <p id="costo" class="text-center"></p>
                 </div>
-                <div class="col-sm-5 col-sm-pull-1 col-md-6 col-lg-6 hidden-xs">
+                <div class="col-sm-6 hidden-xs">
                     <div class="border-map">
                         <div id="mapa"></div>
                     </div>
@@ -179,11 +207,11 @@
           </div>
           <div class="col-md-3 col-xs-6">
             <div class="visible-xs visible-sm icons">
-              <a href="#"><i class="icon-facebook"></i></a>
-              <a href="#"><i class="icon-twitter"></i></a>
-              <a href="#"><i class="icon-linkedin2"></i></a>
-              <a href="#"><i class="icon-appleinc"></i></a>
-              <a href="#"><i class="icon-play3"></i></a>
+              <a href="#"><i class="icon icon-facebook"></i></a>
+              <a href="#"><i class="icon icon-twitter"></i></a>
+              <a href="#"><i class="icon icon-linkedin2"></i></a>
+              <a href="#"><i class="icon icon-appleinc"></i></a>
+              <a href="#"><i class="icon icon-play3"></i></a>
             </div>
             <div class="reverse">
               <img src="assets/img/app-store.png" alt="Apple store">
